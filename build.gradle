@@ -126,7 +126,7 @@ configure(allprojects) { subproject ->
 
   test {
     doFirst {
-        jvmArgs "-javaagent:${configurations.jacoco.asPath}=destfile=${buildDir}/jacoco.exec,includes=org.springframework.test.web.servlet.htmlunit.*"
+        //jvmArgs "-javaagent:${configurations.jacoco.asPath}=destfile=${buildDir}/jacoco.exec,includes=org.springframework.test.web.servlet.htmlunit.*"
     }
   }
 }
